@@ -4,8 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, {{ اللي شوهوا }}">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="visibilitychange事件判断当前页面——可见性的状态, {{ اللي شوهوا }}">
+    <meta name="description" content="document.hidden这个新出现的document.hidden属性，它显示页面是否为用户当前观看的页面，值为ture或false。
+document.visibilityStatevisibilityState的值要么是visib">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | {{ اللي شوهوا }}</title>
+    <title>visibilitychange事件判断当前页面——可见性的状态 | {{ اللي شوهوا }}</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -269,13 +270,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        visibilitychange事件判断当前页面——可见性的状态
                     </div>
                 </div>
             </div>
@@ -372,20 +373,29 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/前端这些事儿/" class="post-category" target="_blank">
+                                前端这些事儿
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-06-28
+                    2019-01-21
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        73
+                        390
                     </div>
                     
 
@@ -408,15 +418,47 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <p>document.hidden<br>这个新出现的document.hidden属性，它显示页面是否为用户当前观看的页面，值为ture或false。</p>
+<p>document.visibilityState<br>visibilityState的值要么是visible (表明页面为浏览器当前激活tab，而且窗口不是最小化状态)，要么是hidden (页面不是当前激活tab页面，或者窗口最小化了。)，或者prerender (页面在重新生成，对用户不可见。).</p>
+<p>visibilitychange事件<br>监听页面可见性变化非常容易：</p>
+<html>
+<!--在这里插入内容-->
+window.onload = function() {
+    var hidden, state, visibilityChange, title = document.title;
+    // 各种浏览器兼容
+    if (typeof document.hidden !== "undefined") {
+        hidden = "hidden";
+        visibilityChange = "visibilitychange";
+        state = "visibilityState"
+    } else if (typeof document.mozHidden !== "undefined") {
+        hidden = "mozHidden";
+        visibilityChange = "mozvisibilitychange";
+        state = "mozVisibilityState"
+    } else if (typeof document.msHidden !== "undefined") {
+        hidden = "msHidden";
+        visibilityChange = "msvisibilitychange";
+        state = "msVisibilityState"
+    } else if (typeof document.webkitHidden !== "undefined") {
+        hidden = "webkitHidden";
+        visibilityChange = "webkitvisibilitychange";
+        state = "webkitVisibilityState"
+    }
+    // 添加监听器，在title里显示状态变化
+    document.addEventListener(visibilityChange, function() {
+        if (document[state] == "hidden") {
+            document.title = "出bug了,快看!"
+        } else {
+            document.title = title
+        }
+    }, false)
+}
+</html>
+上面的代码会在页面可见性发生变化时修改document.title的值！
+
+
+<p>那么，什么时候需要使用visibilitychange事件呢？比如，如果你的页面上有嵌入视频正在播放，当用户切换到其它标签页时，你的标签页上的视频应自动暂停播放，当用户切换回来时继续接着播放。再比如，如果你的页面有自动刷新动作，当用户切换到其它标签页时，你就应该停止刷新，而当用户切换回来时继续之前的动作。</p>
+<p>**
+需要注意的是:  页面跳转之后的返回当前页不会触发本事件**</p>
 
             </div>
             <hr/>
@@ -557,7 +599,7 @@
                     </span>
                     <a href="https://zarva-lee.github.io" class="b-link-green">{{ اللي شوهوا }}</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/06/28/hello-world/" class="b-link-green">Hello World</a>
+                    <a href="/2019/01/21/visibilitychange-shi-jian-pan-duan-dang-qian-ye-mian-ke-jian-xing-de-zhuang-tai/" class="b-link-green">visibilitychange事件判断当前页面——可见性的状态</a>
                 </p>
             </div>
         </div>
@@ -579,7 +621,7 @@
         repo: 'zarva-lee.github.io',
         owner: 'zarva-lee',
         admin: ["zarva-lee"],
-        id: '2019-06-28T14-43-24',
+        id: '2019-01-21T09-54-14',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -603,40 +645,6 @@
         <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/2019/06/28/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex</div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-28
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            zarva Lee
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2019/01/21/visibilitychange-shi-jian-pan-duan-dang-qian-ye-mian-ke-jian-xing-de-zhuang-tai/">
@@ -666,6 +674,60 @@ document.visibilityStatevisibilityState的值要么是visib</div>
                             
                         </span>
                     </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2018/07/24/mime-lei-xing-da-quan/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="MIME类型大全">
+                        
+                        <span class="card-title">MIME类型大全</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">NameMIME Type / Internet Media TypeFile ExtensionMore Details3D Crossword Pluginapplication/vnd.hzn-3d-crossword.x3dIANA</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-07-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/前端这些事儿/" class="post-category" target="_blank">
+                                    前端这些事儿
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/MIME/" target="_blank">
+                        <span class="chip bg-color">MIME</span>
+                    </a>
+                    
+                    <a href="/tags/MIME-Type/" target="_blank">
+                        <span class="chip bg-color">MIME Type</span>
+                    </a>
+                    
+                    <a href="/tags/content-type/" target="_blank">
+                        <span class="chip bg-color">content-type</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -774,7 +836,7 @@ document.visibilityStatevisibilityState的值要么是visib</div>
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">11.1k</span>
+                <span class="white-color">11k</span>
             
 
             

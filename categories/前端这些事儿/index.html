@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="{{ اللي شوهوا }}">
-    <meta name="description" content="{{ اللي شوهوا }}">
+    <meta name="keywords" content="分类: 前端这些事儿, {{ اللي شوهوا }}">
+    <meta name="description" content="分类: 前端这些事儿 | {{ اللي شوهوا }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>{{ اللي شوهوا }}</title>
+    <title>分类: 前端这些事儿 | {{ اللي شوهوا }}</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -265,14 +265,7 @@
     </nav>
 </header>
 
-<style type="text/css">
-    /* don't remove. */
-    .index-cover {
-        height: 100vh;
-    }
-</style>
-
-<div class="bg-cover index-cover about-cover" style="background-image: url('/medias/cover.jpg')">
+<div class="bg-cover  about-cover" style="background-image: url('/medias/cover.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -292,41 +285,6 @@
             </div>
         </div>
         
-        <div class="cover-btns">
-            <a href="#recommend-sections" class="waves-effect waves-light btn">
-                <i class="fa fa-angle-double-down"></i>继续阅读
-            </a>
-
-            
-            <a href="https://github.com/zarva-lee" class="waves-effect waves-light btn" target="_blank">
-                <i class="fa fa-github-alt"></i>Github
-            </a>
-            
-        </div>
-        <div class="cover-social-link">
-    <a href="https://github.com/zarva-lee" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fa fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:zarva.lee@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fa fa-envelope-open"></i>
-    </a>
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1154309574" class="tooltipped" data-tooltip="QQ联系我: 1154309574" data-position="top" data-delay="50">
-        <i class="fa fa-qq"></i>
-    </a>
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fa fa-rss"></i>
-    </a>
-</div>
-        
     </div>
 </div>
 
@@ -338,73 +296,67 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <main class="content">
 
     
-    <div class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
 
-                    
-                        
-
-<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<div class="music-player">
-    
-    <div class="title center-align">
-        <i class="fa fa-music"></i>&nbsp;&nbsp;听听音乐
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s12">
-            <div id="aplayer" class="music"></div>
+<div id="category-cloud" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fa fa-bookmark"></i>&nbsp;&nbsp;文章分类
+            </div>
+            <div class="tag-chips">
+                
+                
+                
+                <a href="/categories/前端这些事儿/" title="前端这些事儿: 7">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            style="background-color: #F9EBEA;">前端这些事儿
+                        <span class="tag-length">7</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/诗和远方/" title="诗和远方: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">诗和远方
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/设计那些事儿/" title="设计那些事儿: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">设计那些事儿
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/转载/" title="转载: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #E8F8F5;">转载
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+            </div>
         </div>
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script>
-$(function () {
-    new APlayer({
-        container: document.getElementById('aplayer'),
-        fixed: 'false' === 'true',
-        autoplay: 'false' === 'true',
-        theme: '#42b983',
-        loop: 'all',
-        order: 'list',
-        preload: 'auto',
-        volume: Number('0.7'),
-        listFolded: 'false' === 'true',
-        listMaxHeight: '',
-        audio: JSON.parse('[{"name":"五月雨变奏电音","artist":"AnimeVibe","url":"http://static.blinkfox.com/music1.mp3","cover":"http://static.blinkfox.com/music-cover1.png"},{"name":"Take me hand","artist":"DAISHI DANCE,Cecile Corbel","url":"http://static.blinkfox.com/music2.mp3","cover":"http://static.blinkfox.com/music-cover2.png"},{"name":"Shape of You","artist":"J.Fla","url":"http://static.blinkfox.com/music3.mp3","cover":"http://static.blinkfox.com/music-cover3.png"}]')
-    });
-});
-</script>
-                    
-
-                    
-
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
 
-    
-
-    <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row article-row">
+        <div class="row tags-posts">
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2019/01/21/visibilitychange-shi-jian-pan-duan-dang-qian-ye-mian-ke-jian-xing-de-zhuang-tai/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="visibilitychange事件判断当前页面——可见性的状态">
@@ -412,7 +364,6 @@ $(function () {
                             <span class="card-title">visibilitychange事件判断当前页面——可见性的状态</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary">
                             
@@ -440,10 +391,10 @@ $(function () {
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2018/07/24/mime-lei-xing-da-quan/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="MIME类型大全">
@@ -451,7 +402,6 @@ $(function () {
                             <span class="card-title">MIME类型大全</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary">
                             
@@ -495,10 +445,10 @@ $(function () {
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2018/04/24/ztree-shi-xian-shu-xing-tu-mo-hu-sou-suo/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="zTree实现树形图模糊搜索">
@@ -506,7 +456,6 @@ $(function () {
                             <span class="card-title">zTree实现树形图模糊搜索</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary">
                             
@@ -545,112 +494,10 @@ b). 节点名称中匹配部分高亮
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/03/14/colour-me-in-tommy-ljungberg/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Colour Me In - Tommy ljungberg">
-                            
-                            <span class="card-title">Colour Me In - Tommy ljungberg</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary">
-                            
-                                
-
-
-
-前言 很好听的一首歌，当时搜遍了国内各个平台，还跑到知乎去提问，来找这首歌。
- 时隔一年，网易云竟然给我日推到了这首歌，猿粪！。
-
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-14
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/诗和远方/" class="post-category" target="_blank">
-                                    诗和远方
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/music/" target="_blank">
-                            <span class="chip bg-color">music</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/03/14/js-ti-qu-zhong-wen-pin-yin-shou-zi-mu-fang-fa/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="js提取中文拼音首字母方法">
-                            
-                            <span class="card-title">js提取中文拼音首字母方法</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary">
-                            
-                                前言本文主要记录如何用js提前中文拼音首字母的方法。封装一个函数，假如有需要的，可以直接拿去用。
-原理主要是根据中文的unicode码来进行
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-14
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/转载/" class="post-category" target="_blank">
-                                    转载
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/js/" target="_blank">
-                            <span class="chip bg-color">js</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2018/03/12/yun-ying-shang-hao-ma-duan-xu-ni-hao-duan/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="运营商号码段，虚拟号段">
@@ -658,7 +505,6 @@ b). 节点名称中匹配部分高亮
                             <span class="card-title">运营商号码段，虚拟号段</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary">
                             
@@ -695,63 +541,10 @@ b). 节点名称中匹配部分高亮
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/03/06/shi-yong-ai-kuai-su-jiang-mo-hu-tu-pian-miao-zhuan-gao-qing-tu/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="使用AI快速将模糊图片秒转矢量图/高清图">
-                            
-                            <span class="card-title">使用AI快速将模糊图片秒转矢量图/高清图</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary">
-                            
-                                
-这里介绍如何用AI 快速将低像素位图转化成可以无限放大的矢量图，简单粗暴！
-
-以下是原图：
-步骤
-
-新建一个空白画布，新建-置入 - 找到
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/设计那些事儿/" class="post-category" target="_blank">
-                                    设计那些事儿
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/AI/" target="_blank">
-                            <span class="chip bg-color">AI</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2018/03/05/calc-jian-dan-shuo-ming/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="calc()简单说明">
@@ -759,7 +552,6 @@ b). 节点名称中匹配部分高亮
                             <span class="card-title">calc()简单说明</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary">
                             
@@ -801,10 +593,10 @@ b). 节点名称中匹配部分高亮
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2018/02/13/webstorm/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="webstorm 永久破解版and汉化包">
@@ -812,7 +604,6 @@ b). 节点名称中匹配部分高亮
                             <span class="card-title">webstorm 永久破解版and汉化包</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary">
                             
@@ -852,10 +643,10 @@ b). 节点名称中匹配部分高亮
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2018/02/11/githubpage/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="配置GithubPage,github.io/指向不同的项目">
@@ -863,7 +654,6 @@ b). 节点名称中匹配部分高亮
                             <span class="card-title">配置GithubPage,github.io/指向不同的项目</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary">
                             
@@ -910,9 +700,7 @@ https://jiawe
             
         </div>
     </article>
-
 </main>
-
 
 
 <footer class="page-footer bg-color">

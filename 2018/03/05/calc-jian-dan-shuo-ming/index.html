@@ -4,8 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, {{ اللي شوهوا }}">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="calc()简单说明, {{ اللي شوهوا }}">
+    <meta name="description" content="语法：calc() = calc(四则运算)
+说明：用于动态计算长度值。
+需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100vw - 10px)
+
+任何长度值都可以使用calc()函数进行计算(百分比、px、e">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | {{ اللي شوهوا }}</title>
+    <title>calc()简单说明 | {{ اللي شوهوا }}</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -269,13 +273,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        calc()简单说明
                     </div>
                 </div>
             </div>
@@ -365,12 +369,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/calc/" target="_blank">
+                                <span class="chip bg-color">calc</span>
+                            </a>
+                        
+                            <a href="/tags/css/" target="_blank">
+                                <span class="chip bg-color">css</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/前端这些事儿/" class="post-category" target="_blank">
+                                前端这些事儿
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -378,14 +399,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-06-28
+                    2018-03-05
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        73
+                        337
                     </div>
                     
 
@@ -408,15 +429,62 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <p><strong>语法：</strong><br>calc() = calc(四则运算)</p>
+<p><strong>说明：</strong><br>用于动态计算长度值。</p>
+<p><strong>需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100vw - 10px)</strong></p>
+<ol>
+<li>任何长度值都可以使用calc()函数进行计算(百分比、px、em、rem)；</li>
+<li>calc()函数支持 “+”, “-“, “*”, “/“ 运算；</li>
+<li>calc()函数使用标准的数学运算优先级规则；</li>
+</ol>
+<p><strong>实践：</strong></p>
+<pre class=" language-css"><code class="language-css">    <span class="token property">height</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span>vh - <span class="token number">10</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100%</span> - <span class="token number">10</span>px<span class="token punctuation">)</span></code></pre>
+<p>   vh  相对于视口的高度。视口被均分为100单位的vh。</p>
+<pre class=" language-css"><code class="language-css">    <span class="token property">width</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span>vw - <span class="token number">10</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100%</span> - <span class="token number">10</span>px<span class="token punctuation">)</span></code></pre>
+<p>   vw  相对于视口的宽度。视口被均分为100单位的vw。</p>
+<p>可以看一看这个教程，对于vh vw的解释的很好<br><a href="http://www.zhangxinxu.com/wordpress/2012/09/new-viewport-relative-units-vw-vh-vm-vmin/" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/2012/09/new-viewport-relative-units-vw-vh-vm-vmin/</a></p>
+<p><strong>例子：三局平均分布的布局，中间间距为5像素。</strong><br><img src="https://i.imgur.com/ZVD7Vsn.jpg" alt></p>
+<pre class=" language-html"><code class="language-html">    <span class="token doctype">&lt;!DOCTYPE html></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>     
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span>device-width, initial-scale<span class="token punctuation">=</span>1<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>calc<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
+                <span class="token selector">* </span><span class="token punctuation">{</span>
+                    <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+                    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token selector"><span class="token class">.col-3</span> </span><span class="token punctuation">{</span>
+                    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100%</span>/<span class="token number">3</span> - <span class="token number">5</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+                    <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">5</span>px*<span class="token number">3</span> /<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token hexcode">#eee</span><span class="token punctuation">;</span>
+                    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#333</span><span class="token punctuation">;</span>
+                    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
+                    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+                    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">5</span>px*<span class="token number">3</span> /<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">18</span>px<span class="token punctuation">;</span>
+                    <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token selector"><span class="token class">.col-3</span><span class="token pseudo-class">:nth-child(3)</span> </span><span class="token punctuation">{</span>
+                    <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<p><strong>浏览器兼容性：</strong><br><img src="https://i.imgur.com/lYnZBZg.png" alt></p>
 
             </div>
             <hr/>
@@ -557,7 +625,7 @@
                     </span>
                     <a href="https://zarva-lee.github.io" class="b-link-green">{{ اللي شوهوا }}</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/06/28/hello-world/" class="b-link-green">Hello World</a>
+                    <a href="/2018/03/05/calc-jian-dan-shuo-ming/" class="b-link-green">calc()简单说明</a>
                 </p>
             </div>
         </div>
@@ -579,7 +647,7 @@
         repo: 'zarva-lee.github.io',
         owner: 'zarva-lee',
         admin: ["zarva-lee"],
-        id: '2019-06-28T14-43-24',
+        id: '2018-03-05T15-52-03',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -600,35 +668,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/06/28/hello-world/">
+                <a href="/2018/03/06/shi-yong-ai-kuai-su-jiang-mo-hu-tu-pian-miao-zhuan-gao-qing-tu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="使用AI快速将模糊图片秒转矢量图/高清图">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">使用AI快速将模糊图片秒转矢量图/高清图</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex</div>
+                    <div class="summary">
+这里介绍如何用AI 快速将低像素位图转化成可以无限放大的矢量图，简单粗暴！
+
+以下是原图：
+步骤
+
+新建一个空白画布，新建-置入 - 找到需要转化的位图 -嵌入，然后复制位图 ，方便后期做对比
+
+
+
+
+选中其中一张位图-点击上方图像描摹下</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-06
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            zarva Lee
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/设计那些事儿/" class="post-category" target="_blank">
+                                    设计那些事儿
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/AI/" target="_blank">
+                        <span class="chip bg-color">AI</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -639,21 +728,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/01/21/visibilitychange-shi-jian-pan-duan-dang-qian-ye-mian-ke-jian-xing-de-zhuang-tai/">
+                <a href="/2018/02/13/webstorm/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="visibilitychange事件判断当前页面——可见性的状态">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="webstorm 永久破解版and汉化包">
                         
-                        <span class="card-title">visibilitychange事件判断当前页面——可见性的状态</span>
+                        <span class="card-title">webstorm 永久破解版and汉化包</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">document.hidden这个新出现的document.hidden属性，它显示页面是否为用户当前观看的页面，值为ture或false。
-document.visibilityStatevisibilityState的值要么是visib</div>
+                    <div class="summary">前言：无意间看到了WebStorm-2017.3.1最新版本的永久破解方法，网盘包含了安装包，破解说明和汉化包，网盘地址：https://pan.baidu.com/s/1smTOHHz 密码：nkec
+下面也提供了单独下载地址（注意下载的</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-21
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-13
                             </span>
                         <span class="publish-author">
                             
@@ -666,6 +755,18 @@ document.visibilityStatevisibilityState的值要么是visib</div>
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/webstorm破解/" target="_blank">
+                        <span class="chip bg-color">webstorm破解</span>
+                    </a>
+                    
+                    <a href="/tags/webstorm汉化/" target="_blank">
+                        <span class="chip bg-color">webstorm汉化</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -774,7 +875,7 @@ document.visibilityStatevisibilityState的值要么是visib</div>
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">11.1k</span>
+                <span class="white-color">11k</span>
             
 
             

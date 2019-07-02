@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zarva-lee.github.io/"/>
-  <updated>2019-06-28T06:43:24.624Z</updated>
+  <updated>2019-07-02T08:01:01.785Z</updated>
   <id>https://zarva-lee.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://zarva-lee.github.io/2019/06/28/hello-world/"/>
-    <id>https://zarva-lee.github.io/2019/06/28/hello-world/</id>
-    <published>2019-06-28T06:43:24.624Z</published>
-    <updated>2019-06-28T06:43:24.624Z</updated>
+    <title>visibilitychange事件判断当前页面——可见性的状态</title>
+    <link href="https://zarva-lee.github.io/2019/01/21/visibilitychange-shi-jian-pan-duan-dang-qian-ye-mian-ke-jian-xing-de-zhuang-tai/"/>
+    <id>https://zarva-lee.github.io/2019/01/21/visibilitychange-shi-jian-pan-duan-dang-qian-ye-mian-ke-jian-xing-de-zhuang-tai/</id>
+    <published>2019-01-21T01:54:14.000Z</published>
+    <updated>2019-07-02T08:01:01.785Z</updated>
     
     <summary type="html">
     
@@ -29,12 +29,272 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;p&gt;document.hidden&lt;br&gt;这个新出现的document.hidden属性，它显示页面是否为用户当前观看的页面，值为ture或false。&lt;/p&gt;
+&lt;p&gt;document.visibilityState&lt;br&gt;visibilityState的值要么是visible
         
       
     
     </summary>
     
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MIME类型大全</title>
+    <link href="https://zarva-lee.github.io/2018/07/24/mime-lei-xing-da-quan/"/>
+    <id>https://zarva-lee.github.io/2018/07/24/mime-lei-xing-da-quan/</id>
+    <published>2018-07-24T02:24:11.000Z</published>
+    <updated>2019-07-02T08:01:00.821Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table class=&quot;bordered-table&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;MIME Type / Internet Media Type&lt;/th&gt;&lt;th&gt;File Extension&lt;/th&gt;&lt;th&gt;More
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="MIME" scheme="https://zarva-lee.github.io/tags/MIME/"/>
+    
+      <category term="MIME Type" scheme="https://zarva-lee.github.io/tags/MIME-Type/"/>
+    
+      <category term="content-type" scheme="https://zarva-lee.github.io/tags/content-type/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>zTree实现树形图模糊搜索</title>
+    <link href="https://zarva-lee.github.io/2018/04/24/ztree-shi-xian-shu-xing-tu-mo-hu-sou-suo/"/>
+    <id>https://zarva-lee.github.io/2018/04/24/ztree-shi-xian-shu-xing-tu-mo-hu-sou-suo/</id>
+    <published>2018-04-24T02:24:11.000Z</published>
+    <updated>2019-07-02T08:00:55.884Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;1-在搜索框中输入关键字-希望实现的效果&quot;&gt;&lt;a href=&quot;#1-在搜索框中输入关键字-希望实现的效果&quot; class=&quot;headerlink&quot; title=&quot;1. 在搜索框中输入关键字,希望实现的效果:&quot;&gt;&lt;/a&gt;1.
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="zTree" scheme="https://zarva-lee.github.io/tags/zTree/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Colour Me In - Tommy ljungberg</title>
+    <link href="https://zarva-lee.github.io/2018/03/14/colour-me-in-tommy-ljungberg/"/>
+    <id>https://zarva-lee.github.io/2018/03/14/colour-me-in-tommy-ljungberg/</id>
+    <published>2018-03-14T07:46:30.000Z</published>
+    <updated>2019-07-02T08:00:45.659Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="诗和远方" scheme="https://zarva-lee.github.io/categories/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/"/>
+    
+    
+      <category term="music" scheme="https://zarva-lee.github.io/tags/music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js提取中文拼音首字母方法</title>
+    <link href="https://zarva-lee.github.io/2018/03/14/js-ti-qu-zhong-wen-pin-yin-shou-zi-mu-fang-fa/"/>
+    <id>https://zarva-lee.github.io/2018/03/14/js-ti-qu-zhong-wen-pin-yin-shou-zi-mu-fang-fa/</id>
+    <published>2018-03-14T02:35:00.000Z</published>
+    <updated>2019-07-02T08:00:41.712Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文主要记录如何用js提前中文拼音首字母的方法。封装一个函数，假如有需要的，可以直接拿去用。&lt;/p&gt;
+&lt;h3 id=&quot;原理&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="转载" scheme="https://zarva-lee.github.io/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="js" scheme="https://zarva-lee.github.io/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>运营商号码段，虚拟号段</title>
+    <link href="https://zarva-lee.github.io/2018/03/12/yun-ying-shang-hao-ma-duan-xu-ni-hao-duan/"/>
+    <id>https://zarva-lee.github.io/2018/03/12/yun-ying-shang-hao-ma-duan-xu-ni-hao-duan/</id>
+    <published>2018-03-12T09:32:54.000Z</published>
+    <updated>2019-07-02T08:00:43.905Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;前言：在做活动中，用户会中奖到话费和流量的奖项，有些用户为虚拟号码，话费和流量都不能给用户冲上。（最后处理结果，前台判断虚拟号段不能参与活动）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;心疼
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="虚拟号段" scheme="https://zarva-lee.github.io/tags/%E8%99%9A%E6%8B%9F%E5%8F%B7%E6%AE%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用AI快速将模糊图片秒转矢量图/高清图</title>
+    <link href="https://zarva-lee.github.io/2018/03/06/shi-yong-ai-kuai-su-jiang-mo-hu-tu-pian-miao-zhuan-gao-qing-tu/"/>
+    <id>https://zarva-lee.github.io/2018/03/06/shi-yong-ai-kuai-su-jiang-mo-hu-tu-pian-miao-zhuan-gao-qing-tu/</id>
+    <published>2018-03-06T09:05:56.000Z</published>
+    <updated>2019-07-02T08:00:37.303Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;这里介绍如何用AI 快速将低像素位图转化成可以无限放大的矢量图，简单粗暴！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以下是原图：&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/vKYgiBh.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="设计那些事儿" scheme="https://zarva-lee.github.io/categories/%E8%AE%BE%E8%AE%A1%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="AI" scheme="https://zarva-lee.github.io/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>calc()简单说明</title>
+    <link href="https://zarva-lee.github.io/2018/03/05/calc-jian-dan-shuo-ming/"/>
+    <id>https://zarva-lee.github.io/2018/03/05/calc-jian-dan-shuo-ming/</id>
+    <published>2018-03-05T07:52:03.000Z</published>
+    <updated>2019-07-02T08:00:31.671Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;语法：&lt;/strong&gt;&lt;br&gt;calc() = calc(四则运算)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说明：&lt;/strong&gt;&lt;br&gt;用于动态计算长度值。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;需要注意的是，运算符前后都需要保留一个空格，例如：width:
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="calc" scheme="https://zarva-lee.github.io/tags/calc/"/>
+    
+      <category term="css" scheme="https://zarva-lee.github.io/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webstorm 永久破解版and汉化包</title>
+    <link href="https://zarva-lee.github.io/2018/02/13/webstorm/"/>
+    <id>https://zarva-lee.github.io/2018/02/13/webstorm/</id>
+    <published>2018-02-13T01:56:08.000Z</published>
+    <updated>2019-07-02T08:00:35.914Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;前言：无意间看到了WebStorm-2017.3.1最新版本的永久破解方法，网盘包含了安装包，破解说明和汉化包，网盘地址：&lt;a href=&quot;https://pan.baidu.com/s/1smTOHHz&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="webstorm破解" scheme="https://zarva-lee.github.io/tags/webstorm%E7%A0%B4%E8%A7%A3/"/>
+    
+      <category term="webstorm汉化" scheme="https://zarva-lee.github.io/tags/webstorm%E6%B1%89%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置GithubPage,github.io/指向不同的项目</title>
+    <link href="https://zarva-lee.github.io/2018/02/11/githubpage/"/>
+    <id>https://zarva-lee.github.io/2018/02/11/githubpage/</id>
+    <published>2018-02-11T03:03:53.000Z</published>
+    <updated>2019-07-02T08:01:10.423Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;介绍：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;github上两个不同项目&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/nvkVyCQ.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="GithubPage" scheme="https://zarva-lee.github.io/tags/GithubPage/"/>
+    
+      <category term="GithubPage的二级域名" scheme="https://zarva-lee.github.io/tags/GithubPage%E7%9A%84%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D/"/>
     
   </entry>
   
