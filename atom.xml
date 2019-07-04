@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zarva-lee.github.io/"/>
-  <updated>2019-07-03T02:06:30.027Z</updated>
+  <updated>2019-07-04T10:16:18.125Z</updated>
   <id>https://zarva-lee.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Date.parse()方法在安卓和苹果手机上的不同表现</title>
+    <link href="https://zarva-lee.github.io/2019/07/04/20190704/"/>
+    <id>https://zarva-lee.github.io/2019/07/04/20190704/</id>
+    <published>2019-07-04T10:16:01.000Z</published>
+    <updated>2019-07-04T10:16:18.125Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;经过手动测试得知：&quot;&gt;&lt;a href=&quot;#经过手动测试得知：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="Date.parse" scheme="https://zarva-lee.github.io/tags/Date-parse/"/>
+    
+  </entry>
   
   <entry>
     <title>为什么每一位大前端从业者都应该学习Flutter？</title>

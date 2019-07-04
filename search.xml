@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Date.parse()方法在安卓和苹果手机上的不同表现</title>
+      <link href="/2019/07/04/20190704/"/>
+      <url>/2019/07/04/20190704/</url>
+      
+        <content type="html"><![CDATA[<h1 id="经过手动测试得知："><a href="#经过手动测试得知：" class="headerlink" title="经过手动测试得知："></a><strong>经过手动测试得知：</strong></h1><ul><li>安卓手机：会正常返回毫秒数，只要是符合要求的时间字符串即可，要求比较宽松。</li><li>苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。</li></ul><p><strong>经过查阅资料得知：</strong></p><ol><li>语法：<pre><code>//显式调用Date.parse(dateString)//隐式调用new Date(dateString)/** 参数：dateString*  一个符合 RFC2822 或 ISO 8601 日期格式的字符串（其他格式也许也支持，但结果可能与预期不符）。*  返回值：*  一个表示从1970-1-1 00:00:00 UTC到给定日期字符串所表示时间的毫秒数的数值。*  注：如果参数不能解析为一个有效的日期，则返回NaN。</code></pre></li><li>*/</li></ol><p>描述：</p><ul><li>Date.parse() 方法接受一个表示时间的字符串，返回相应的时间值。</li><li>如果传入Date.parse()方法的参数不能解析为一个有效的日期，则返回NaN。</li><li>如果该时间字符串无法识别，或者一些情况下，包含了不合法的日期数值（如：2015-02-31），则返回值为NaN。</li><li>字符串的解析完全取决于实现。直到至今，不同宿主（指各大浏览器厂商）在如何解析日期字符串上仍存在许多差异。</li><li>由于在解析日期字符串时存在偏差会导致结果不一致，因此推荐始终手动解析日期字符串。</li></ul><ol start="3"><li>引擎相关日期：</li></ol><ul><li>ECMAScript 规范规定：如果一个字符串不符合标准格式，则函数可以使用任何由引擎决定的策略或解析算法。</li><li>Date.parse() 对于因包含有无效元素而无法识别的 ISO 格式字符串或者日期，应该返回NaN。</li><li>在如 ECMA-262 规范中定义的情况，如果因为无效值而导致日期字符串不能被识别为ISO 格式时，根据浏览器和给定的值不同，返回值可以是，也可以不是 NaN。</li><li>如果字符串被识别为 ISO格式并且包含无效值，则在所有遵循 ES5 或者更新标准的浏览器中都会返回 NaN 。</li></ul><ol start="4"><li>解决办法</li></ol><p>兼容性提示：为了避免任何可能的同步问题或者有歧义的年份，推荐使用 ISO 8601 格式如 “2017-04-16”。<br>ECMAScript 5 ISO-8601 日期格式支持</p><ul><li>日期时间字符串也可以使用 ISO 8601格式。</li><li>例如，”2011-10-10” （仅日期） 或 “2011-10-10T14:48:00” （日期和时间）能够作为参数被传递和解析。</li><li>如果参数字符串只包含日期格式，那么将会使用UTC时区来解析该参数。</li><li>而如果是ISO 8601 格式中规定的时间加日期的格式，则将会被作为本地时区处理。<pre><code>//显式调用Date.parse(dateString)//隐式调用new Date(dateString)/** 参数：dateString*  一个符合 RFC2822 或 ISO 8601 日期格式的字符串（其他格式也许也支持，但结果可能与预期不符）。*  返回值：*  一个表示从1970-1-1 00:00:00 UTC到给定日期字符串所表示时间的毫秒数的数值。*  注：如果参数不能解析为一个有效的日期，则返回NaN。*/</code></pre></li></ul><pre><code></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端这些事儿 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Date.parse </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>为什么每一位大前端从业者都应该学习Flutter？</title>
       <link href="/2019/07/03/wei-shi-me-mei-yi-wei-da-qian-duan-cong-ye-zhe-du-ying-gai-xue-xi-flutter/"/>
       <url>/2019/07/03/wei-shi-me-mei-yi-wei-da-qian-duan-cong-ye-zhe-du-ying-gai-xue-xi-flutter/</url>
