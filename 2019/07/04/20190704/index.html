@@ -7,11 +7,10 @@
     <meta name="keywords" content="Date.parse()方法在安卓和苹果手机上的不同表现, {{ اللي شوهوا }}">
     <meta name="description" content="经过手动测试得知：
 安卓手机：会正常返回毫秒数，只要是符合要求的时间字符串即可，要求比较宽松。
-苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。
+苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。经过查阅资料得知：
 
-经过查阅资料得知：
 
-语法：//显">
+语法：//显式">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -404,7 +403,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        822
+                        764
                     </div>
                     
 
@@ -427,11 +426,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="经过手动测试得知："><a href="#经过手动测试得知：" class="headerlink" title="经过手动测试得知："></a><strong>经过手动测试得知：</strong></h1><ul>
+                <h3 id="经过手动测试得知："><a href="#经过手动测试得知：" class="headerlink" title="经过手动测试得知："></a><strong>经过手动测试得知：</strong></h3><ul>
 <li>安卓手机：会正常返回毫秒数，只要是符合要求的时间字符串即可，要求比较宽松。</li>
-<li>苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。</li>
+<li>苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。<h3 id="经过查阅资料得知："><a href="#经过查阅资料得知：" class="headerlink" title="经过查阅资料得知："></a><strong>经过查阅资料得知：</strong></h3></li>
 </ul>
-<p><strong>经过查阅资料得知：</strong></p>
 <ol>
 <li>语法：<pre><code>//显式调用
 Date.parse(dateString)
@@ -461,28 +459,19 @@ new Date(dateString)
 <li>在如 ECMA-262 规范中定义的情况，如果因为无效值而导致日期字符串不能被识别为ISO 格式时，根据浏览器和给定的值不同，返回值可以是，也可以不是 NaN。</li>
 <li>如果字符串被识别为 ISO格式并且包含无效值，则在所有遵循 ES5 或者更新标准的浏览器中都会返回 NaN 。</li>
 </ul>
-<ol start="4">
-<li>解决办法</li>
-</ol>
-<p>兼容性提示：为了避免任何可能的同步问题或者有歧义的年份，推荐使用 ISO 8601 格式如 “2017-04-16”。<br>ECMAScript 5 ISO-8601 日期格式支持</p>
+<h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>兼容性提示：为了避免任何可能的同步问题或者有歧义的年份，推荐使用 ISO 8601 格式如 “2017-04-16”。<br>ECMAScript 5 ISO-8601 日期格式支持</p>
 <ul>
 <li>日期时间字符串也可以使用 ISO 8601格式。</li>
 <li>例如，”2011-10-10” （仅日期） 或 “2011-10-10T14:48:00” （日期和时间）能够作为参数被传递和解析。</li>
 <li>如果参数字符串只包含日期格式，那么将会使用UTC时区来解析该参数。</li>
-<li>而如果是ISO 8601 格式中规定的时间加日期的格式，则将会被作为本地时区处理。<pre><code>//显式调用
-Date.parse(dateString)
-//隐式调用
-new Date(dateString)
-/** 参数：dateString
-*  一个符合 RFC2822 或 ISO 8601 日期格式的字符串（其他格式也许也支持，但结果可能与预期不符）。
-*  返回值：
-*  一个表示从1970-1-1 00:00:00 UTC到给定日期字符串所表示时间的毫秒数的数值。
-*  注：如果参数不能解析为一个有效的日期，则返回NaN。
-*/
-</code></pre></li>
+<li>而如果是ISO 8601 格式中规定的时间加日期的格式，则将会被作为本地时区处理。<pre><code>//时间转换方法（改进后的）
+function transformTime(t){
+  //注意：苹果手机不支持以“-”分割的时间形式，故必须进行格式转换。
+  var time = t.replace(/-/g,&quot;/&quot;);
+  return Date.parse(time);
+}</code></pre></li>
 </ul>
-<pre><code>
-</code></pre>
+
             </div>
             <hr/>
 
@@ -682,11 +671,10 @@ new Date(dateString)
                 <div class="card-content article-content">
                     <div class="summary">经过手动测试得知：
 安卓手机：会正常返回毫秒数，只要是符合要求的时间字符串即可，要求比较宽松。
-苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。
+苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。经过查阅资料得知：
 
-经过查阅资料得知：
 
-语法：//显</div>
+语法：//显式</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-04
@@ -866,7 +854,7 @@ var g</div>
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">13.3k</span>
+                <span class="white-color">13.2k</span>
             
 
             
