@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zarva-lee.github.io/"/>
-  <updated>2019-07-02T08:01:01.785Z</updated>
+  <updated>2019-07-03T02:06:30.027Z</updated>
   <id>https://zarva-lee.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>为什么每一位大前端从业者都应该学习Flutter？</title>
+    <link href="https://zarva-lee.github.io/2019/07/03/wei-shi-me-mei-yi-wei-da-qian-duan-cong-ye-zhe-du-ying-gai-xue-xi-flutter/"/>
+    <id>https://zarva-lee.github.io/2019/07/03/wei-shi-me-mei-yi-wei-da-qian-duan-cong-ye-zhe-du-ying-gai-xue-xi-flutter/</id>
+    <published>2019-07-03T02:05:39.458Z</published>
+    <updated>2019-07-03T02:06:30.027Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文主要记录如何用js提前中文拼音首字母的方法。封装一个函数，假如有需要的，可以直接拿去用。&lt;/p&gt;
+&lt;h3 id=&quot;原理&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="转载" scheme="https://zarva-lee.github.io/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="js" scheme="https://zarva-lee.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>visibilitychange事件判断当前页面——可见性的状态</title>
