@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zarva-lee.github.io/"/>
-  <updated>2019-07-04T10:22:37.989Z</updated>
+  <updated>2019-07-04T10:37:58.790Z</updated>
   <id>https://zarva-lee.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Date.parse()方法在安卓和苹果手机上的不同表现</title>
+    <title>iOS safari 后退 js 不执行的问题</title>
     <link href="https://zarva-lee.github.io/2019/07/04/20190704/"/>
     <id>https://zarva-lee.github.io/2019/07/04/20190704/</id>
-    <published>2019-07-04T10:16:01.000Z</published>
-    <updated>2019-07-04T10:22:37.989Z</updated>
+    <published>2019-07-04T10:30:23.000Z</published>
+    <updated>2019-07-04T10:37:58.790Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天偶遇一个问题：iOS 10 safari 浏览器中，后退后，页面 js 没有运行。&lt;br&gt;之前也遇到过这个问题，因为加入风控的代码，就好了。就没有深究。这次发现，风控的代码不好使了��。也可能是这次 iOS 版本问题，之前没有测试过 iOS 10
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="ios" scheme="https://zarva-lee.github.io/tags/ios/"/>
+    
+      <category term="safari" scheme="https://zarva-lee.github.io/tags/safari/"/>
+    
+      <category term="history" scheme="https://zarva-lee.github.io/tags/history/"/>
+    
+      <category term="后退" scheme="https://zarva-lee.github.io/tags/%E5%90%8E%E9%80%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Date.parse()方法在安卓和苹果手机上的不同表现</title>
+    <link href="https://zarva-lee.github.io/2019/07/03/20190703/"/>
+    <id>https://zarva-lee.github.io/2019/07/03/20190703/</id>
+    <published>2019-07-03T10:16:01.000Z</published>
+    <updated>2019-07-04T10:35:24.633Z</updated>
     
     <summary type="html">
     
@@ -39,33 +71,6 @@
     
     
       <category term="Date.parse" scheme="https://zarva-lee.github.io/tags/Date-parse/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为什么每一位大前端从业者都应该学习Flutter？</title>
-    <link href="https://zarva-lee.github.io/2019/07/03/wei-shi-me-mei-yi-wei-da-qian-duan-cong-ye-zhe-du-ying-gai-xue-xi-flutter/"/>
-    <id>https://zarva-lee.github.io/2019/07/03/wei-shi-me-mei-yi-wei-da-qian-duan-cong-ye-zhe-du-ying-gai-xue-xi-flutter/</id>
-    <published>2019-07-03T02:05:39.458Z</published>
-    <updated>2019-07-03T02:06:30.027Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文主要记录如何用js提前中文拼音首字母的方法。封装一个函数，假如有需要的，可以直接拿去用。&lt;/p&gt;
-&lt;h3 id=&quot;原理&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="转载" scheme="https://zarva-lee.github.io/categories/%E8%BD%AC%E8%BD%BD/"/>
-    
-    
-      <category term="js" scheme="https://zarva-lee.github.io/tags/js/"/>
     
   </entry>
   

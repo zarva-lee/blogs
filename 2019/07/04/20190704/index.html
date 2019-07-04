@@ -4,13 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Date.parse()方法在安卓和苹果手机上的不同表现, {{ اللي شوهوا }}">
-    <meta name="description" content="经过手动测试得知：
-安卓手机：会正常返回毫秒数，只要是符合要求的时间字符串即可，要求比较宽松。
-苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。经过查阅资料得知：
-
-
-语法：//显式">
+    <meta name="keywords" content="iOS safari 后退 js 不执行的问题, {{ اللي شوهوا }}">
+    <meta name="description" content="今天偶遇一个问题：iOS 10 safari 浏览器中，后退后，页面 js 没有运行。之前也遇到过这个问题，因为加入风控的代码，就好了。就没有深究。这次发现，风控的代码不好使了��。也可能是这次 iOS 版本问题，之前没有测试过 iOS 1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Date.parse()方法在安卓和苹果手机上的不同表现 | {{ اللي شوهوا }}</title>
+    <title>iOS safari 后退 js 不执行的问题 | {{ اللي شوهوا }}</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -274,13 +269,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Date.parse()方法在安卓和苹果手机上的不同表现
+                        iOS safari 后退 js 不执行的问题
                     </div>
                 </div>
             </div>
@@ -372,8 +367,20 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Date-parse/" target="_blank">
-                                <span class="chip bg-color">Date.parse</span>
+                            <a href="/tags/ios/" target="_blank">
+                                <span class="chip bg-color">ios</span>
+                            </a>
+                        
+                            <a href="/tags/safari/" target="_blank">
+                                <span class="chip bg-color">safari</span>
+                            </a>
+                        
+                            <a href="/tags/history/" target="_blank">
+                                <span class="chip bg-color">history</span>
+                            </a>
+                        
+                            <a href="/tags/后退/" target="_blank">
+                                <span class="chip bg-color">后退</span>
                             </a>
                         
                     </div>
@@ -403,7 +410,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        764
+                        524
                     </div>
                     
 
@@ -426,51 +433,78 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="经过手动测试得知："><a href="#经过手动测试得知：" class="headerlink" title="经过手动测试得知："></a><strong>经过手动测试得知：</strong></h3><ul>
-<li>安卓手机：会正常返回毫秒数，只要是符合要求的时间字符串即可，要求比较宽松。</li>
-<li>苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。<h3 id="经过查阅资料得知："><a href="#经过查阅资料得知：" class="headerlink" title="经过查阅资料得知："></a><strong>经过查阅资料得知：</strong></h3></li>
-</ul>
-<ol>
-<li>语法：<pre><code>//显式调用
-Date.parse(dateString)
-//隐式调用
-new Date(dateString)
-/** 参数：dateString
-*  一个符合 RFC2822 或 ISO 8601 日期格式的字符串（其他格式也许也支持，但结果可能与预期不符）。
-*  返回值：
-*  一个表示从1970-1-1 00:00:00 UTC到给定日期字符串所表示时间的毫秒数的数值。
-*  注：如果参数不能解析为一个有效的日期，则返回NaN。</code></pre></li>
-<li>*/</li>
-</ol>
-<p>描述：</p>
-<ul>
-<li>Date.parse() 方法接受一个表示时间的字符串，返回相应的时间值。</li>
-<li>如果传入Date.parse()方法的参数不能解析为一个有效的日期，则返回NaN。</li>
-<li>如果该时间字符串无法识别，或者一些情况下，包含了不合法的日期数值（如：2015-02-31），则返回值为NaN。</li>
-<li>字符串的解析完全取决于实现。直到至今，不同宿主（指各大浏览器厂商）在如何解析日期字符串上仍存在许多差异。</li>
-<li>由于在解析日期字符串时存在偏差会导致结果不一致，因此推荐始终手动解析日期字符串。</li>
-</ul>
-<ol start="3">
-<li>引擎相关日期：</li>
-</ol>
-<ul>
-<li>ECMAScript 规范规定：如果一个字符串不符合标准格式，则函数可以使用任何由引擎决定的策略或解析算法。</li>
-<li>Date.parse() 对于因包含有无效元素而无法识别的 ISO 格式字符串或者日期，应该返回NaN。</li>
-<li>在如 ECMA-262 规范中定义的情况，如果因为无效值而导致日期字符串不能被识别为ISO 格式时，根据浏览器和给定的值不同，返回值可以是，也可以不是 NaN。</li>
-<li>如果字符串被识别为 ISO格式并且包含无效值，则在所有遵循 ES5 或者更新标准的浏览器中都会返回 NaN 。</li>
-</ul>
-<h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>兼容性提示：为了避免任何可能的同步问题或者有歧义的年份，推荐使用 ISO 8601 格式如 “2017-04-16”。<br>ECMAScript 5 ISO-8601 日期格式支持</p>
-<ul>
-<li>日期时间字符串也可以使用 ISO 8601格式。</li>
-<li>例如，”2011-10-10” （仅日期） 或 “2011-10-10T14:48:00” （日期和时间）能够作为参数被传递和解析。</li>
-<li>如果参数字符串只包含日期格式，那么将会使用UTC时区来解析该参数。</li>
-<li>而如果是ISO 8601 格式中规定的时间加日期的格式，则将会被作为本地时区处理。<pre><code>//时间转换方法（改进后的）
-function transformTime(t){
-  //注意：苹果手机不支持以“-”分割的时间形式，故必须进行格式转换。
-  var time = t.replace(/-/g,&quot;/&quot;);
-  return Date.parse(time);
-}</code></pre></li>
-</ul>
+                <p>今天偶遇一个问题：iOS 10 safari 浏览器中，后退后，页面 js 没有运行。<br>之前也遇到过这个问题，因为加入风控的代码，就好了。就没有深究。这次发现，风控的代码不好使了��。也可能是这次 iOS 版本问题，之前没有测试过 iOS 10 系统。<br>网上搜索之，整理方案如下：</p>
+<pre class=" language-javascript"><code class="language-javascript">window<span class="token punctuation">.</span>onpageshow <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> isIos <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> ua <span class="token operator">=</span> window<span class="token punctuation">.</span>navigator<span class="token punctuation">.</span>userAgent
+    <span class="token keyword">return</span> <span class="token regex">/iphone|ipad|ipod/i</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>ua<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isIos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> e<span class="token punctuation">.</span>persisted<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>简单来说，通过监听 pageshow 事件，判断 event.persisted 当前页面是否是读取缓存，来决定是否进行刷新。上面代码放置在公共 js 里，全站后退问题均可解决。<br>不过这样做有个小问题，页面先进行了后退，显示了历史数据，然后 js 执行了页面刷新，看到了浏览器进度条。由于服务器及网络原因，需要几秒时间。<br>这个刷新动作能不能优化呢？我认为还是有空间的。比如有的页面，明确就是需要刷新某一个接口数据即可。<br>那么我们可以对其进行调整，比如执行全局方法 historyBack，根据返回值来决定是否进行全页面刷新。</p>
+<pre class=" language-javascript"><code class="language-javascript">
+  <span class="token comment" spellcheck="true">// 页面代码</span>
+  <span class="token keyword">var</span> page <span class="token operator">=</span> <span class="token punctuation">{</span>
+    getData<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> that <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+        $<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            url<span class="token punctuation">:</span> getInteGral<span class="token punctuation">,</span>
+            type<span class="token punctuation">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+            dataType<span class="token punctuation">:</span> <span class="token string">'json'</span><span class="token punctuation">,</span>
+            beforeSend<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                fm<span class="token punctuation">.</span><span class="token function">showLoging</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            success<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                layer<span class="token punctuation">.</span><span class="token function">closeAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                that<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    render<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span>code <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            vue<span class="token punctuation">.</span>$data<span class="token punctuation">.</span>isLogin <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            vue<span class="token punctuation">.</span>$data<span class="token punctuation">.</span>phoneNum <span class="token operator">=</span> data<span class="token punctuation">.</span>msg<span class="token punctuation">.</span>phone<span class="token punctuation">;</span>
+            vue<span class="token punctuation">.</span>$data<span class="token punctuation">.</span>my_integral <span class="token operator">=</span> data<span class="token punctuation">.</span>msg<span class="token punctuation">.</span>my_integral<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>code <span class="token operator">==</span> <span class="token number">201</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// 未登录</span>
+            vue<span class="token punctuation">.</span>$data<span class="token punctuation">.</span>isLogin <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            vue<span class="token punctuation">.</span>$data<span class="token punctuation">.</span>isLogin <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            fm<span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    init<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getData</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  window<span class="token punctuation">.</span>historyBack <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    page<span class="token punctuation">.</span><span class="token function">getData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span> <span class="token comment" spellcheck="true">// 阻止全局刷新</span>
+  <span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">// 全局代码</span>
+window<span class="token punctuation">.</span>onpageshow <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> isIos <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> ua <span class="token operator">=</span> window<span class="token punctuation">.</span>navigator<span class="token punctuation">.</span>userAgent
+      <span class="token keyword">return</span> <span class="token regex">/iphone|ipad|ipod/i</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>ua<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isIos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> e<span class="token punctuation">.</span>persisted<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> cb <span class="token operator">=</span> window<span class="token punctuation">.</span>historyBack
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> cb <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          window<span class="token punctuation">.</span>location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>        
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        window<span class="token punctuation">.</span>location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        page<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span></code></pre>
+<p>这样是我目前能想到的比较好的处理方法。可以全局配置默认强制刷新代码，每个页面也支持自定义刷新方案。代码量还不算太多。</p>
 
             </div>
             <hr/>
@@ -611,7 +645,7 @@ function transformTime(t){
                     </span>
                     <a href="https://zarva-lee.github.io" class="b-link-green">{{ اللي شوهوا }}</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/07/04/20190704/" class="b-link-green">Date.parse()方法在安卓和苹果手机上的不同表现</a>
+                    <a href="/2019/07/04/20190704/" class="b-link-green">iOS safari 后退 js 不执行的问题</a>
                 </p>
             </div>
         </div>
@@ -633,7 +667,7 @@ function transformTime(t){
         repo: 'zarva-lee.github.io',
         owner: 'zarva-lee',
         admin: ["zarva-lee"],
-        id: '2019-07-04T18-16-01',
+        id: '2019-07-04T18-30-23',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -663,18 +697,13 @@ function transformTime(t){
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Date.parse()方法在安卓和苹果手机上的不同表现">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="iOS safari 后退 js 不执行的问题">
                         
-                        <span class="card-title">Date.parse()方法在安卓和苹果手机上的不同表现</span>
+                        <span class="card-title">iOS safari 后退 js 不执行的问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">经过手动测试得知：
-安卓手机：会正常返回毫秒数，只要是符合要求的时间字符串即可，要求比较宽松。
-苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。经过查阅资料得知：
-
-
-语法：//显式</div>
+                    <div class="summary">今天偶遇一个问题：iOS 10 safari 浏览器中，后退后，页面 js 没有运行。之前也遇到过这个问题，因为加入风控的代码，就好了。就没有深究。这次发现，风控的代码不好使了��。也可能是这次 iOS 版本问题，之前没有测试过 iOS 1</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-04
@@ -695,8 +724,20 @@ function transformTime(t){
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Date-parse/" target="_blank">
-                        <span class="chip bg-color">Date.parse</span>
+                    <a href="/tags/ios/" target="_blank">
+                        <span class="chip bg-color">ios</span>
+                    </a>
+                    
+                    <a href="/tags/safari/" target="_blank">
+                        <span class="chip bg-color">safari</span>
+                    </a>
+                    
+                    <a href="/tags/history/" target="_blank">
+                        <span class="chip bg-color">history</span>
+                    </a>
+                    
+                    <a href="/tags/后退/" target="_blank">
+                        <span class="chip bg-color">后退</span>
                     </a>
                     
                 </div>
@@ -710,19 +751,22 @@ function transformTime(t){
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/03/wei-shi-me-mei-yi-wei-da-qian-duan-cong-ye-zhe-du-ying-gai-xue-xi-flutter/">
+                <a href="/2019/07/03/20190703/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="为什么每一位大前端从业者都应该学习Flutter？">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Date.parse()方法在安卓和苹果手机上的不同表现">
                         
-                        <span class="card-title">为什么每一位大前端从业者都应该学习Flutter？</span>
+                        <span class="card-title">Date.parse()方法在安卓和苹果手机上的不同表现</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">前言本文主要记录如何用js提前中文拼音首字母的方法。封装一个函数，假如有需要的，可以直接拿去用。
-原理主要是根据中文的unicode码来进行的。主要是在收集的中文范围内查找，大家可以多收集一些。假如中文是多音字，那可能有点坑了！
-var g</div>
+                    <div class="summary">经过手动测试得知：
+安卓手机：会正常返回毫秒数，只要是符合要求的时间字符串即可，要求比较宽松。
+苹果手机：会返回NaN。形如2018-07-24 23:17:43的时间字符串的格式不被支持，不符合标准。经过查阅资料得知：
+
+
+语法：//显式</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-03
@@ -731,8 +775,8 @@ var g</div>
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/转载/" class="post-category" target="_blank">
-                                    转载
+                            <a href="/categories/前端这些事儿/" class="post-category" target="_blank">
+                                    前端这些事儿
                                 </a>
                             
                             
@@ -742,8 +786,8 @@ var g</div>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/js/" target="_blank">
-                        <span class="chip bg-color">js</span>
+                    <a href="/tags/Date-parse/" target="_blank">
+                        <span class="chip bg-color">Date.parse</span>
                     </a>
                     
                 </div>
@@ -854,7 +898,7 @@ var g</div>
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">13.2k</span>
+                <span class="white-color">12.3k</span>
             
 
             
