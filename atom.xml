@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zarva-lee.github.io/"/>
-  <updated>2019-07-22T07:55:00.249Z</updated>
+  <updated>2019-07-22T08:01:29.501Z</updated>
   <id>https://zarva-lee.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zarva-lee.github.io/2019/07/22/20190722/"/>
     <id>https://zarva-lee.github.io/2019/07/22/20190722/</id>
     <published>2019-07-22T07:40:13.000Z</published>
-    <updated>2019-07-22T07:55:00.249Z</updated>
+    <updated>2019-07-22T08:01:29.501Z</updated>
     
     <summary type="html">
     
@@ -30,7 +30,7 @@
         
         
           &lt;p&gt;无意间发现笔者的有道云笔记在曾几何时有一篇关于terminal命令的总结笔记。由于笔记记录内容实在太多，所以在这里简单整理了一些Mac下终端里常用且实用的命令方便日后查阅。&lt;/p&gt;
-&lt;p&gt;###查看&lt;br&gt;在终端里输入ls就可以查看文件和文件夹，但隐藏的文件就无法查看，使用
+&lt;h3 id=&quot;查看&quot;&gt;&lt;a href=&quot;#查看&quot; class=&quot;headerlink&quot;
         
       
     
