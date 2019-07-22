@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zarva-lee.github.io/"/>
-  <updated>2019-07-04T10:37:58.790Z</updated>
+  <updated>2019-07-22T07:55:00.249Z</updated>
   <id>https://zarva-lee.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac下的常用终端（terminal）命令总结</title>
+    <link href="https://zarva-lee.github.io/2019/07/22/20190722/"/>
+    <id>https://zarva-lee.github.io/2019/07/22/20190722/</id>
+    <published>2019-07-22T07:40:13.000Z</published>
+    <updated>2019-07-22T07:55:00.249Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;无意间发现笔者的有道云笔记在曾几何时有一篇关于terminal命令的总结笔记。由于笔记记录内容实在太多，所以在这里简单整理了一些Mac下终端里常用且实用的命令方便日后查阅。&lt;/p&gt;
+&lt;p&gt;###查看&lt;br&gt;在终端里输入ls就可以查看文件和文件夹，但隐藏的文件就无法查看，使用
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="mac终端命令" scheme="https://zarva-lee.github.io/tags/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/"/>
+    
+      <category term="terminal" scheme="https://zarva-lee.github.io/tags/terminal/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS safari 后退 js 不执行的问题</title>

@@ -4,12 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="calc()简单说明, {{ اللي شوهوا }}">
-    <meta name="description" content="语法：calc() = calc(四则运算)
-说明：用于动态计算长度值。
-需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100vw - 10px)
-
-任何长度值都可以使用calc()函数进行计算(百分比、px、e">
+    <meta name="keywords" content="Mac下的常用终端（terminal）命令总结, {{ اللي شوهوا }}">
+    <meta name="description" content="无意间发现笔者的有道云笔记在曾几何时有一篇关于terminal命令的总结笔记。由于笔记记录内容实在太多，所以在这里简单整理了一些Mac下终端里常用且实用的命令方便日后查阅。
+###查看在终端里输入ls就可以查看文件和文件夹，但隐藏的文件就无">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>calc()简单说明 | {{ اللي شوهوا }}</title>
+    <title>Mac下的常用终端（terminal）命令总结 | {{ اللي شوهوا }}</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -273,13 +270,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        calc()简单说明
+                        Mac下的常用终端（terminal）命令总结
                     </div>
                 </div>
             </div>
@@ -371,12 +368,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/calc/" target="_blank">
-                                <span class="chip bg-color">calc</span>
+                            <a href="/tags/mac终端命令/" target="_blank">
+                                <span class="chip bg-color">mac终端命令</span>
                             </a>
                         
-                            <a href="/tags/css/" target="_blank">
-                                <span class="chip bg-color">css</span>
+                            <a href="/tags/terminal/" target="_blank">
+                                <span class="chip bg-color">terminal</span>
                             </a>
                         
                     </div>
@@ -399,21 +396,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-03-05
+                    2019-07-22
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        337
+                        549
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -429,62 +426,19 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>语法：</strong><br>calc() = calc(四则运算)</p>
-<p><strong>说明：</strong><br>用于动态计算长度值。</p>
-<p><strong>需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100vw - 10px)</strong></p>
-<ol>
-<li>任何长度值都可以使用calc()函数进行计算(百分比、px、em、rem)；</li>
-<li>calc()函数支持 “+”, “-“, “*”, “/“ 运算；</li>
-<li>calc()函数使用标准的数学运算优先级规则；</li>
-</ol>
-<p><strong>实践：</strong></p>
-<pre class=" language-css"><code class="language-css">    <span class="token property">height</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span>vh - <span class="token number">10</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100%</span> - <span class="token number">10</span>px<span class="token punctuation">)</span></code></pre>
-<p>   vh  相对于视口的高度。视口被均分为100单位的vh。</p>
-<pre class=" language-css"><code class="language-css">    <span class="token property">width</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span>vw - <span class="token number">10</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token property">width</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100%</span> - <span class="token number">10</span>px<span class="token punctuation">)</span></code></pre>
-<p>   vw  相对于视口的宽度。视口被均分为100单位的vw。</p>
-<p>可以看一看这个教程，对于vh vw的解释的很好<br><a href="http://www.zhangxinxu.com/wordpress/2012/09/new-viewport-relative-units-vw-vh-vm-vmin/" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/2012/09/new-viewport-relative-units-vw-vh-vm-vmin/</a></p>
-<p><strong>例子：三局平均分布的布局，中间间距为5像素。</strong><br><img src="https://i.imgur.com/ZVD7Vsn.jpg" alt></p>
-<pre class=" language-html"><code class="language-html">    <span class="token doctype">&lt;!DOCTYPE html></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>     
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span>device-width, initial-scale<span class="token punctuation">=</span>1<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>calc<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
-                <span class="token selector">* </span><span class="token punctuation">{</span>
-                    <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-                    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                <span class="token selector"><span class="token class">.col-3</span> </span><span class="token punctuation">{</span>
-                    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100%</span>/<span class="token number">3</span> - <span class="token number">5</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
-                    <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">5</span>px*<span class="token number">3</span> /<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token hexcode">#eee</span><span class="token punctuation">;</span>
-                    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#333</span><span class="token punctuation">;</span>
-                    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-                    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-                    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">5</span>px*<span class="token number">3</span> /<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">18</span>px<span class="token punctuation">;</span>
-                    <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                <span class="token selector"><span class="token class">.col-3</span><span class="token pseudo-class">:nth-child(3)</span> </span><span class="token punctuation">{</span>
-                    <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
-<p><strong>浏览器兼容性：</strong><br><img src="https://i.imgur.com/lYnZBZg.png" alt></p>
+                <p>无意间发现笔者的有道云笔记在曾几何时有一篇关于terminal命令的总结笔记。由于笔记记录内容实在太多，所以在这里简单整理了一些Mac下终端里常用且实用的命令方便日后查阅。</p>
+<p>###查看<br>在终端里输入ls就可以查看文件和文件夹，但隐藏的文件就无法查看，使用ls -a即可。</p>
+<p>###创建目录<br>命令：mkdir<br>使用说明：输入命令随后空格再输入目录名即可。<br>案例：创建一个test目录则对应命令就是mkdir test</p>
+<p>###进入目录<br>cd命令进入目录比如要进入test目录则就是cd test<br>返回上一级目录<br>命令：cd..</p>
+<p>#删除目录（空目录）<br>命令：rmdir<br>案例：rmdir test（rmdir命令后面空格在加上目录名）<br>注意：此删除不会出现在废纸篓里</p>
+<p>###删除目录（非空或者空目录都可以删除）推荐使用<br>命令： rm -rf<br>案例：rm -rf test（rm -rf命令后面空格在加上目录名）<br>注意：此删除不会出现在废纸篓里</p>
+<p>###创建文件<br>命令:touch<br>笔者感觉这个命令还是挺靠谱的。Mac如果不用第三方工具（sublime等）是无法可视化创建一个txt文件。而用这个命令即可创建。<br>示例（创建一个test为名的txt文件）：touch test.txt</p>
+<p>###删除文件<br>命令：rm<br>案例（删除一个test.txt文件）：rm test.txt<br>注意：此删除不会出现在废纸篓里</p>
+<p>###拷贝<br>命令：cp<br>案例（拷贝一个test.txt文件并重新命名为test2.txt）：cp test.txt test2.txt</p>
+<p>###查找<br>命令：find<br>案例（查找当前目录下所有的txt文件）：find *.txt<br>显示当前的目录<br>命令：pwd</p>
+<p>###打开成可视化的文件夹<br>命令：open<br>说明：如果是open .则是打开当前命令里的目录，如果要打开指定的文件夹或者文件则格式为open 要打开的路径即可。</p>
+<p>###关机<br>命令：sudo shutdown -h now –立刻关机<br>sudo shutdown -h +10 – 十分钟后关机<br>sudo shutdown -h 20:00 – 晚上八点关机</p>
+<p>###重启<br>命令：sudo shutdown -r now</p>
 
             </div>
             <hr/>
@@ -625,7 +579,7 @@
                     </span>
                     <a href="https://zarva-lee.github.io" class="b-link-green">{{ اللي شوهوا }}</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/03/05/calc-jian-dan-shuo-ming/" class="b-link-green">calc()简单说明</a>
+                    <a href="/2019/07/22/20190722/" class="b-link-green">Mac下的常用终端（terminal）命令总结</a>
                 </p>
             </div>
         </div>
@@ -647,7 +601,7 @@
         repo: 'zarva-lee.github.io',
         owner: 'zarva-lee',
         admin: ["zarva-lee"],
-        id: '2018-03-05T15-52-03',
+        id: '2019-07-22T15-40-13',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -668,53 +622,49 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2018/03/06/shi-yong-ai-kuai-su-jiang-mo-hu-tu-pian-miao-zhuan-gao-qing-tu/">
+                <a href="/2019/07/22/20190722/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="使用AI快速将模糊图片秒转矢量图/高清图">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Mac下的常用终端（terminal）命令总结">
                         
-                        <span class="card-title">使用AI快速将模糊图片秒转矢量图/高清图</span>
+                        <span class="card-title">Mac下的常用终端（terminal）命令总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">
-这里介绍如何用AI 快速将低像素位图转化成可以无限放大的矢量图，简单粗暴！
-
-以下是原图：
-步骤
-
-新建一个空白画布，新建-置入 - 找到需要转化的位图 -嵌入，然后复制位图 ，方便后期做对比
-
-
-
-
-选中其中一张位图-点击上方图像描摹下</div>
+                    <div class="summary">无意间发现笔者的有道云笔记在曾几何时有一篇关于terminal命令的总结笔记。由于笔记记录内容实在太多，所以在这里简单整理了一些Mac下终端里常用且实用的命令方便日后查阅。
+###查看在终端里输入ls就可以查看文件和文件夹，但隐藏的文件就无</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/设计那些事儿/" class="post-category" target="_blank">
-                                    设计那些事儿
+                            <a href="/categories/前端这些事儿/" class="post-category" target="_blank">
+                                    前端这些事儿
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/AI/" target="_blank">
-                        <span class="chip bg-color">AI</span>
+                    <a href="/tags/mac终端命令/" target="_blank">
+                        <span class="chip bg-color">mac终端命令</span>
+                    </a>
+                    
+                    <a href="/tags/terminal/" target="_blank">
+                        <span class="chip bg-color">terminal</span>
                     </a>
                     
                 </div>
@@ -728,21 +678,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/02/13/webstorm/">
+                <a href="/2019/07/04/20190704/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="webstorm 永久破解版and汉化包">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="iOS safari 后退 js 不执行的问题">
                         
-                        <span class="card-title">webstorm 永久破解版and汉化包</span>
+                        <span class="card-title">iOS safari 后退 js 不执行的问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">前言：无意间看到了WebStorm-2017.3.1最新版本的永久破解方法，网盘包含了安装包，破解说明和汉化包，网盘地址：https://pan.baidu.com/s/1smTOHHz 密码：nkec
-下面也提供了单独下载地址（注意下载的</div>
+                    <div class="summary">今天偶遇一个问题：iOS 10 safari 浏览器中，后退后，页面 js 没有运行。之前也遇到过这个问题，因为加入风控的代码，就好了。就没有深究。这次发现，风控的代码不好使了��。也可能是这次 iOS 版本问题，之前没有测试过 iOS 1</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-13
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-04
                             </span>
                         <span class="publish-author">
                             
@@ -759,12 +708,20 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/webstorm破解/" target="_blank">
-                        <span class="chip bg-color">webstorm破解</span>
+                    <a href="/tags/ios/" target="_blank">
+                        <span class="chip bg-color">ios</span>
                     </a>
                     
-                    <a href="/tags/webstorm汉化/" target="_blank">
-                        <span class="chip bg-color">webstorm汉化</span>
+                    <a href="/tags/safari/" target="_blank">
+                        <span class="chip bg-color">safari</span>
+                    </a>
+                    
+                    <a href="/tags/history/" target="_blank">
+                        <span class="chip bg-color">history</span>
+                    </a>
+                    
+                    <a href="/tags/后退/" target="_blank">
+                        <span class="chip bg-color">后退</span>
                     </a>
                     
                 </div>
