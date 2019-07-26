@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zarva-lee.github.io/"/>
-  <updated>2019-07-22T08:12:14.399Z</updated>
+  <updated>2019-07-26T02:23:06.428Z</updated>
   <id>https://zarva-lee.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>H5端唤醒移动客户端程序(转载)</title>
+    <link href="https://zarva-lee.github.io/2019/07/26/20190726/"/>
+    <id>https://zarva-lee.github.io/2019/07/26/20190726/</id>
+    <published>2019-07-26T02:21:31.000Z</published>
+    <updated>2019-07-26T02:23:06.428Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;关于通过H5页面唤Native户端的介绍&quot;&gt;&lt;a href=&quot;#关于通过H5页面唤Native户端的介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="H5换端" scheme="https://zarva-lee.github.io/tags/H5%E6%8D%A2%E7%AB%AF/"/>
+    
+      <category term="转载" scheme="https://zarva-lee.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac下的常用终端（terminal）命令总结</title>
