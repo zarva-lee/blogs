@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zarva-lee.github.io/"/>
-  <updated>2019-07-26T02:23:06.428Z</updated>
+  <updated>2019-07-31T02:38:06.528Z</updated>
   <id>https://zarva-lee.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于onbeforeunload,beforeunload</title>
+    <link href="https://zarva-lee.github.io/2019/07/31/20190731/"/>
+    <id>https://zarva-lee.github.io/2019/07/31/20190731/</id>
+    <published>2019-07-31T02:38:05.000Z</published>
+    <updated>2019-07-31T02:38:06.528Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot; language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;onbeforeunload &lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="beforeunload" scheme="https://zarva-lee.github.io/tags/beforeunload/"/>
+    
+      <category term="onbeforeunload" scheme="https://zarva-lee.github.io/tags/onbeforeunload/"/>
+    
+  </entry>
   
   <entry>
     <title>H5端唤醒移动客户端程序(转载)</title>

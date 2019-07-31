@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>关于onbeforeunload,beforeunload</title>
+      <link href="/2019/07/31/20190731/"/>
+      <url>/2019/07/31/20190731/</url>
+      
+        <content type="html"><![CDATA[<pre class=" language-javascript"><code class="language-javascript">window<span class="token punctuation">.</span>onbeforeunload <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">/**/</span><span class="token punctuation">}</span>  <span class="token comment" spellcheck="true">//将覆盖任何现有的处理程序并用您自己的处理程序替换它。</span>window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"beforeunload"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">/**/</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//将添加一个新的处理程序。</span></code></pre><p><strong>经过手动测试得知：</strong></p><ul><li><p>安卓手机：都支持。</p></li><li><p>苹果手机：不支持,可以用onpagehide/pagehide代替。</p></li><li><p>onbeforeunload有时候会在安卓手机上莫名 其妙的被执行两次</p></li><li><p>解决的思路如下：</p><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> hasExecuted<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>            window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'beforeunload'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword">if</span><span class="token punctuation">(</span>hasExecuted<span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token comment" spellcheck="true">//解决触发两次问题</span>      <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>  <span class="token punctuation">}</span>  <span class="token comment" spellcheck="true">/* do ......*/</span>  hasExecuted<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端这些事儿 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> beforeunload </tag>
+            
+            <tag> onbeforeunload </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>H5端唤醒移动客户端程序(转载)</title>
       <link href="/2019/07/26/20190726/"/>
       <url>/2019/07/26/20190726/</url>

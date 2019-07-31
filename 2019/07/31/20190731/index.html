@@ -4,9 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="webstorm 永久破解版and汉化包, {{ اللي شوهوا }}">
-    <meta name="description" content="前言：无意间看到了WebStorm-2017.3.1最新版本的永久破解方法，网盘包含了安装包，破解说明和汉化包，网盘地址：https://pan.baidu.com/s/1smTOHHz 密码：nkec
-下面也提供了单独下载地址（注意下载的">
+    <meta name="keywords" content="关于onbeforeunload,beforeunload, {{ اللي شوهوا }}">
+    <meta name="description" content="window.onbeforeunload = function () {/**/}  //将覆盖任何现有的处理程序并用您自己的处理程序替换它。
+
+window.addEventListener(&#34;beforeunload&#34;, functi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>webstorm 永久破解版and汉化包 | {{ اللي شوهوا }}</title>
+    <title>关于onbeforeunload,beforeunload | {{ اللي شوهوا }}</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -270,13 +271,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        webstorm 永久破解版and汉化包
+                        关于onbeforeunload,beforeunload
                     </div>
                 </div>
             </div>
@@ -368,12 +369,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/webstorm破解/" target="_blank">
-                                <span class="chip bg-color">webstorm破解</span>
+                            <a href="/tags/beforeunload/" target="_blank">
+                                <span class="chip bg-color">beforeunload</span>
                             </a>
                         
-                            <a href="/tags/webstorm汉化/" target="_blank">
-                                <span class="chip bg-color">webstorm汉化</span>
+                            <a href="/tags/onbeforeunload/" target="_blank">
+                                <span class="chip bg-color">onbeforeunload</span>
                             </a>
                         
                     </div>
@@ -396,14 +397,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-02-13
+                    2019-07-31
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        145
+                        123
                     </div>
                     
 
@@ -426,14 +427,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>前言：无意间看到了WebStorm-2017.3.1最新版本的永久破解方法，网盘包含了安装包，破解说明和汉化包，网盘地址：<a href="https://pan.baidu.com/s/1smTOHHz" target="_blank" rel="noopener">https://pan.baidu.com/s/1smTOHHz</a> 密码：<strong>nkec</strong></p>
-<p><strong>下面也提供了单独下载地址（注意下载的版本，大于2017.3.1的版本，破解方法已失效）</strong></p>
-<p>webstorm：<a href="http://www.jetbrains.com/webstorm/download/previous.html" target="_blank" rel="noopener">http://www.jetbrains.com/webstorm/download/previous.html</a></p>
-<p>破解方法原文地址：<a href="http://www.imsxm.com/2017/12/go-active-proxy-tool.html" target="_blank" rel="noopener">http://www.imsxm.com/2017/12/go-active-proxy-tool.html</a></p>
-<p>JetBrains 系列所有软件汉化包（包含webstrome的）：<br><a href="https://github.com/pingfangx/TranslatorX" target="_blank" rel="noopener">https://github.com/pingfangx/TranslatorX</a></p>
-<blockquote>
-<p>如有任何问题，请邮件联系我。</p>
-</blockquote>
+                <pre class=" language-javascript"><code class="language-javascript">window<span class="token punctuation">.</span>onbeforeunload <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">/**/</span><span class="token punctuation">}</span>  <span class="token comment" spellcheck="true">//将覆盖任何现有的处理程序并用您自己的处理程序替换它。</span>
+
+window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"beforeunload"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">/**/</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//将添加一个新的处理程序。</span></code></pre>
+<p><strong>经过手动测试得知：</strong></p>
+<ul>
+<li><p>安卓手机：都支持。</p>
+</li>
+<li><p>苹果手机：不支持,可以用onpagehide/pagehide代替。</p>
+</li>
+<li><p>onbeforeunload有时候会在安卓手机上莫名 其妙的被执行两次</p>
+</li>
+<li><p>解决的思路如下：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> hasExecuted<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>            
+window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'beforeunload'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>hasExecuted<span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token comment" spellcheck="true">//解决触发两次问题</span>
+      <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment" spellcheck="true">/* do ......*/</span>
+
+  hasExecuted<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
 
             </div>
             <hr/>
@@ -574,7 +590,7 @@
                     </span>
                     <a href="https://zarva-lee.github.io" class="b-link-green">{{ اللي شوهوا }}</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/02/13/webstorm/" class="b-link-green">webstorm 永久破解版and汉化包</a>
+                    <a href="/2019/07/31/20190731/" class="b-link-green">关于onbeforeunload,beforeunload</a>
                 </p>
             </div>
         </div>
@@ -596,7 +612,7 @@
         repo: 'zarva-lee.github.io',
         owner: 'zarva-lee',
         admin: ["zarva-lee"],
-        id: '2018-02-13T09-56-08',
+        id: '2019-07-31T10-38-05',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -617,29 +633,28 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2018/03/05/calc-jian-dan-shuo-ming/">
+                <a href="/2019/07/31/20190731/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="calc()简单说明">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="关于onbeforeunload,beforeunload">
                         
-                        <span class="card-title">calc()简单说明</span>
+                        <span class="card-title">关于onbeforeunload,beforeunload</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">语法：calc() = calc(四则运算)
-说明：用于动态计算长度值。
-需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100vw - 10px)
+                    <div class="summary">window.onbeforeunload = function () {/**/}  //将覆盖任何现有的处理程序并用您自己的处理程序替换它。
 
-任何长度值都可以使用calc()函数进行计算(百分比、px、e</div>
+window.addEventListener("beforeunload", functi</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -652,15 +667,16 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/calc/" target="_blank">
-                        <span class="chip bg-color">calc</span>
+                    <a href="/tags/beforeunload/" target="_blank">
+                        <span class="chip bg-color">beforeunload</span>
                     </a>
                     
-                    <a href="/tags/css/" target="_blank">
-                        <span class="chip bg-color">css</span>
+                    <a href="/tags/onbeforeunload/" target="_blank">
+                        <span class="chip bg-color">onbeforeunload</span>
                     </a>
                     
                 </div>
@@ -674,27 +690,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/02/11/githubpage/">
+                <a href="/2019/07/26/20190726/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="配置GithubPage,github.io/指向不同的项目">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="H5端唤醒移动客户端程序(转载)">
                         
-                        <span class="card-title">配置GithubPage,github.io/指向不同的项目</span>
+                        <span class="card-title">H5端唤醒移动客户端程序(转载)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">介绍：
-github上两个不同项目
-
-https://jiaweniv.github.io/指向的是个人的博客
-
-https://jiaweniv.github.io/luffyVue/指向的是另一个项目
-
-可以通过上面观察，追加luffy</div>
+                    <div class="summary">关于通过H5页面唤Native户端的介绍1、背景
+目前通过H5页面唤起native APP的场景十分常见，比如常见的分享功能；一方面，对于用户而言，相同的内容在native APP上比H5体验更好，操作更加方便，另一方面，对于APP运营来说</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-11
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-26
                             </span>
                         <span class="publish-author">
                             
@@ -711,12 +721,12 @@ https://jiaweniv.github.io/luffyVue/指向的是另一个项目
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/GithubPage/" target="_blank">
-                        <span class="chip bg-color">GithubPage</span>
+                    <a href="/tags/H5换端/" target="_blank">
+                        <span class="chip bg-color">H5换端</span>
                     </a>
                     
-                    <a href="/tags/GithubPage的二级域名/" target="_blank">
-                        <span class="chip bg-color">GithubPage的二级域名</span>
+                    <a href="/tags/转载/" target="_blank">
+                        <span class="chip bg-color">转载</span>
                     </a>
                     
                 </div>
