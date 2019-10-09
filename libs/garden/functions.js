@@ -122,9 +122,9 @@ function showMessages() {
 }
 
 function adjustWordsPosition() {
-	$('#words').css("position", "absolute");
-	$('#words').css("top", 13+'rem');
-	$('#words').css("left", 8+'rem');
+	// $('#words').css("position", "absolute");
+	// $('#words').css("top", 13+'rem');
+	// $('#words').css("left", 8+'rem');
 }
 
 function adjustCodePosition() {
