@@ -1,0 +1,107 @@
+#mainDiv {
+    width: 100%;
+    height: 100%
+}
+
+#loveHeart {
+    float: left;
+    width: 100%;
+    height: 40rem
+}
+
+#garden {
+    width: 100%;
+    height: 100%
+}
+
+#elapseClock {
+    text-align: right;
+    font-size: 1.152rem;
+    margin-top: 0.64rem;
+    margin-bottom: 0.64rem
+}
+
+#words {
+    font-family: "sans-serif";
+    width: 32rem;
+    font-size: 1.536rem;
+    color: #666
+}
+
+#messages {
+    display: none
+}
+
+#elapseClock .digit {
+    font-family: "digit";
+    font-size: 2.304rem
+}
+
+#loveu {
+    padding: 5px;
+    font-size: 1.408rem;
+    margin-top: 5.12rem;
+    margin-right: 7.68rem;
+    text-align: right;
+    display: none
+}
+
+#loveu .signature {
+    margin-top: 0.64rem;
+    font-size: 1.28rem;
+    font-style: italic
+}
+
+#clickSound {
+    display: none
+}
+
+#code {
+    float: left;
+    width: 28.16rem;
+    height: 25.6rem;
+    color: #333;
+    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+    font-size: 0.768rem
+}
+
+#code .string {
+    color: #2a36ff
+}
+
+#code .keyword {
+    color: #7f0055;
+    font-weight: bold
+}
+
+#code .placeholder {
+    margin-left: 0.96rem
+}
+
+#code .space {
+    margin-left: 0.448rem
+}
+
+#code .comments {
+    color: #3f7f5f
+}
+
+#copyright {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    color: #666
+}
+
+#errorMsg {
+    width: 100%;
+    text-align: center;
+    font-size: 1.152rem;
+    position: absolute;
+    top: 6.4rem;
+    left: 0
+}
+
+#copyright a {
+    color: #666
+}

@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="friends, {{ اللي شوهوا }}">
-    <meta name="description" content="friends | {{ اللي شوهوا }}">
+    <meta name="keywords" content="love, {{ اللي شوهوا }}">
+    <meta name="description" content="love | {{ اللي شوهوا }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>friends | {{ اللي شوهوا }}</title>
+    <title>love | {{ اللي شوهوا }}</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -283,6 +283,21 @@
     </nav>
 </header>
 
+<style type="text/css">
+.content{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="/libs/garden/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/libs/jquery/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="/libs/garden/garden.js"></script>
+<script type="text/javascript" src="/libs/garden/functions.js"></script>
 <div class="bg-cover  about-cover" style="background-image: url('/medias/cover.jpg')">
     <div class="container">
         <div class="row">
@@ -310,277 +325,92 @@
 // Dynamically switch banner pictures every day.
 $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
-<style>
-    .friends-container {
-        margin-top: -100px;
-    }
-
-    .frind-ship img {
-        border-radius: 50%;
-    }
-
-    /* 一下是按钮样式 */
-
-    .frind-ship {
-        padding: 10px 20px;
-    }
-
-    .frind-ship .title {
-        display: flex;
-        align-items: center;
-    }
-
-    .frind-ship .title div {
-        color: #fff;
-        padding-left: 10px;
-    }
-
-    .frind-ship .title img {
-        width: 100px;
-        height: 100px;
-        flex-shrink: 0;
-    }
-
-    .frind-ship .title h1 {
-        line-height: 0.8rem;
-        padding-bottom: 16px;
-        border-bottom: 2px solid #fff;
-    }
-
-    .friend-button {
-        display: flex;
-        justify-content: center;
-        margin-bottom: -27px;
-    }
-
-    .friend-button a {
-        border-radius: 40px;
-    }
-
-    .friend-all .tag-post {
-        margin-bottom: 30px;
-    }
-
-    .button-caution {
-        background-color: #FF4351;
-        border-color: #FF4351;
-        color: #FFF;
-    }
-
-    .button {
-        font-weight: 300;
-        font-size: 16px;
-        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        text-decoration: none;
-        text-align: center;
-        line-height: 40px;
-        height: 40px;
-        padding: 0 40px;
-        margin: 0;
-        display: inline-block;
-        appearance: none;
-        cursor: pointer;
-        border: none;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: .3s;
-        transition-duration: .3s;
-    }
-
-    .title {
-        margin-bottom: 0rem !important;
-    }
-
-    .card {
-        margin: 3rem 0 1rem 0 !important;
-    }
-
-    .button-glow.button-caution {
-        -webkit-animation-name: glowing-caution;
-        animation-name: glowing-caution;
-    }
-
-    @-webkit-keyframes glowing-caution {
-        from {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-
-        50% {
-            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-        }
-
-        to {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-    }
-
-    @keyframes glowing-caution {
-        from {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-
-        50% {
-            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-        }
-
-        to {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-    }
-
-    .button-caution:hover {
-        background-color: #ff7680;
-        border-color: #ff7680;
-        color: #FFF;
-        text-decoration: none;
-    }
-
-    .frind-card1 {
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    }
-
-    .frind-card2 {
-        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-
-    .frind-card3 {
-        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-    }
-
-    .frind-card4 {
-        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    }
-
-    .frind-card5 {
-        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
-    }
-
-    .frind-card6 {
-        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-    }
-
-    .frind-card7 {
-        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-    }
-
-    .frind-card8 {
-        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
-    }
-
-    .frind-card9 {
-        background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-    }
-
-    .frind-card10 {
-        background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    }
-</style>
 
 <main class="content">
-    <div class="container friends-container">
-        <article>
-            
-            
-            <div class="row tags-posts friend-all">
-                
-                
-                <div class=" col s12 m6 l4" data-aos="zoom-in-up">
-                    <div class="card frind-card1">
-                        <div class="frind-ship">
-                            <div class="title">
-                                <img src="http://image.luokangyuan.com/1_qq_27922023.jpg" alt="img">
-                                <div>
-                                    <h1 class="friend-name">码酱</h1>
-                                    <p>我不是大佬，只是在追寻大佬的脚步</p>
-                                </div>
-                            </div>
-                            <div class="friend-button">
-                                <a href="http://luokangyuan.com/" target="_blank" 
-                                    class="button button-glow button-rounded button-caution">
-                                    前去学习
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+<div id="mainDiv">
+	<div id="content " class="container row center-align">
+		<div id="code" class="col s12 m12 l12 copy-right">
+			<span class="comments">/*</span><br />
+			<span class="space"/><span class="comments">*To 2019-09-09(结婚纪念日)</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Mr</span> LiZhaoHua<br />
+			Girl name = <span class="keyword">Mrs</span> WanLuJin<br />
+			<span class="comments">// Fall in love river. </span><br />
+			The boy love the girl;<br />
+			<span class="comments">// They love each other.</span><br />
+			The girl loved the boy;<br />
+			<span class="comments">// AS time goes on.</span><br />
+			The boy can not be separated the girl;<br />
+			<span class="comments">// At the same time.</span><br />
+			The girl can not be separated the boy;<br />
+			<span class="comments">// Both wind and snow all over the sky.</span><br />
+			<span class="comments">// Whether on foot or 5 kilometers.</span><br />
+			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+			<span class="placeholder"/>The boy has but one dream;<br />
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Baby, I love you forever;<br />
+		</div>
+		<div id="loveHeart" class="col s12 m12 l12 social-link social-statis">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					这是我们相爱时光
+					<div id="elapseClock"></div>
                 </div>
-                
-                
-                <div class=" col s12 m6 l4" data-aos="zoom-in-up">
-                    <div class="card frind-card2">
-                        <div class="frind-ship">
-                            <div class="title">
-                                <img src="http://image.luokangyuan.com/4027734.jpeg" alt="img">
-                                <div>
-                                    <h1 class="friend-name">闪烁之狐</h1>
-                                    <p>编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬</p>
-                                </div>
-                            </div>
-                            <div class="friend-button">
-                                <a href="https://blinkfox.github.io/" target="_blank" 
-                                    class="button button-glow button-rounded button-caution">
-                                    前去学习
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class=" col s12 m6 l4" data-aos="zoom-in-up">
-                    <div class="card frind-card3">
-                        <div class="frind-ship">
-                            <div class="title">
-                                <img src="http://image.luokangyuan.com/avatar.jpg" alt="img">
-                                <div>
-                                    <h1 class="friend-name">ja_rome</h1>
-                                    <p>平凡的脚步也可以走出伟大的行程</p>
-                                </div>
-                            </div>
-                            <div class="friend-button">
-                                <a href="ttps://me.csdn.net/jlh912008548" target="_blank" 
-                                    class="button button-glow button-rounded button-caution">
-                                    前去学习
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class=" col s12 m6 l4" data-aos="zoom-in-up">
-                    <div class="card frind-card4">
-                        <div class="frind-ship">
-                            <div class="title">
-                                <img src="http://www.ileilong.com/images/logo.png" alt="img">
-                                <div>
-                                    <h1 class="friend-name">i雷龙</h1>
-                                    <p>编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬</p>
-                                </div>
-                            </div>
-                            <div class="friend-button">
-                                <a href="http://www.ileilong.com/" target="_blank" 
-                                    class="button button-glow button-rounded button-caution">
-                                    前去学习
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </article>
-    </div>
+				<div id="loveu">
+					<br/>
+					<div class="signature"> 仔仔</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+		<a href="#">....</a><br />
+		<a href="#">....</a><br />
+	</div>
+</div>
 </main>
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2019,02,09);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<embed src="http://www.ytmp3.cn/down/39154.mp3" autostart="true" loop="true" hidden="true">
+</embed> 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
