@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Could not find a file named &quot;pubspec.yaml&quot;</title>
+      <link href="/2019/10/10/20191010/"/>
+      <url>/2019/10/10/20191010/</url>
+      
+        <content type="html"><![CDATA[<ul><li>调用[flutter packages get]命令后出现下面的报错</li></ul><pre class=" language-js"><code class="language-js">    Could not find a file named <span class="token string">"pubspec.yaml"</span> <span class="token keyword">in</span> <span class="token string">"/Volumes/zarva/flutter/HistoryOfEverything-master/dependencies/Nima-Flutter"</span><span class="token punctuation">.</span>    Running <span class="token string">"flutter packages get"</span> <span class="token keyword">in</span> app<span class="token operator">...</span>                                    pub <span class="token keyword">get</span> failed <span class="token punctuation">(</span><span class="token number">66</span><span class="token punctuation">)</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端这些事儿 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> flutter </tag>
+            
+            <tag> pubspec.yaml </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于onbeforeunload,beforeunload</title>
       <link href="/2019/07/31/20190731/"/>
       <url>/2019/07/31/20190731/</url>

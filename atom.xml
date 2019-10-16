@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zarva-lee.github.io/"/>
-  <updated>2019-07-31T02:38:06.528Z</updated>
+  <updated>2019-10-10T02:23:26.248Z</updated>
   <id>https://zarva-lee.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Could not find a file named &quot;pubspec.yaml&quot;</title>
+    <link href="https://zarva-lee.github.io/2019/10/10/20191010/"/>
+    <id>https://zarva-lee.github.io/2019/10/10/20191010/</id>
+    <published>2019-10-10T02:18:34.000Z</published>
+    <updated>2019-10-10T02:23:26.248Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;调用[flutter packages get]命令后出现下面的报错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot; language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    Could not find a file named
+        
+      
+    
+    </summary>
+    
+      <category term="前端这些事儿" scheme="https://zarva-lee.github.io/categories/%E5%89%8D%E7%AB%AF%E8%BF%99%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="flutter" scheme="https://zarva-lee.github.io/tags/flutter/"/>
+    
+      <category term="pubspec.yaml" scheme="https://zarva-lee.github.io/tags/pubspec-yaml/"/>
+    
+  </entry>
   
   <entry>
     <title>关于onbeforeunload,beforeunload</title>
